@@ -6,6 +6,8 @@ a base image for them.
 
 For further information on WSO2 prerequisites visit [this link](https://docs.wso2.com/display/Carbon401/Installation+Prerequisites)
 
+Installed software in this image: Oracle Java 7, Ant, Maven, ActiveMQ
+
 # How to use this image
 
 Simple pull the image to use it as base for your installations.
