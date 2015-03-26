@@ -7,9 +7,7 @@
 #	2. Install Ant
 #	3. Install Maven
 #	4. Install ActiveMQ
-#	5. Install WSO2 Component
-#
-#
+
 
 FROM ubuntu:14.04
 MAINTAINER Sebastian Kiepsch <basti.sk@gmx.de>
@@ -24,8 +22,7 @@ RUN add-apt-repository ppa:webupd8team/java -y
 RUN apt-get update
 RUN echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections
 RUN apt-get install oracle-java7-installer -y
-ENV JAVA_HOME /usr/lib/jvm/java-7-oracle
-ENV PATH ${JAVA_HOME}/bin:${PATH}
+RUN apt-get install oracle-java7-set-default -y
 
 # ========== 2. Install Ant ==========
 RUN apt-get -y install ant -y
