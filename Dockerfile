@@ -1,7 +1,7 @@
 # Dockerfile for installation of WSO2 Preinstallation Needs running on Ubuntu 14.04
 # ================================================================
 # File created by: Sebastian Kiepsch
-# Last Edited: 25.03.2015
+# Last Edited: 25.03.2015, w8
 # Procedure:
 #	1. Install Oracle Java
 #	2. Install Ant
