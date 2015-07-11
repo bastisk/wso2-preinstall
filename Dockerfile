@@ -23,6 +23,7 @@ RUN apt-get update
 RUN echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections
 RUN apt-get install oracle-java7-installer -y
 RUN apt-get install oracle-java7-set-default -y
+ENV JAVA_HOME /usr/lib/jvm/java-7-oracle
 
 # ========== 2. Install Ant ==========
 RUN apt-get -y install ant -y
@@ -31,6 +32,7 @@ RUN apt-get -y install ant -y
 RUN apt-get install maven -y
 #ENV M2_HOME /opt/apache-maven-3.0.3
 #ENV PATH ${M2_HOME}/bin:${PATH}
+
 
 
 # ========== 4. Install ActiveMQ ==========
